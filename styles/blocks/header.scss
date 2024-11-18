@@ -1,0 +1,174 @@
+.header {
+  background-image: url('../../images/bg.png');
+  background-size: 140%;
+
+  @include onSmallDesktop {
+    background-size: contain;
+    position: relative;
+  }
+
+  &__star {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+
+      position: absolute;
+      right: -10px;
+      top: -30px;
+    }
+  }
+
+  &__anchor {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+
+      width: 135px;
+      height: 335px;
+
+      position: absolute;
+      bottom: 0;
+      left: -10px;
+    }
+  }
+
+  &__nav {
+    @include onDesktop {
+      margin-bottom: 62px;
+    }
+  }
+
+  &__content {
+    margin-top: -(calc($header-logo-size / 2));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include onSmallDesktop {
+      flex-direction: row;
+      justify-content: center;
+      align-items: end;
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 140px;
+    }
+
+    &-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      max-width: 606px
+    }
+  }
+
+  &__logo {
+    @include figure($header-logo-size);
+
+    @include onDesktop {
+      @include figure(139px);
+
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    @include onDesktop {
+      padding-inline: 50px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $page-light-blue-color;
+
+    margin-bottom: 15px;
+
+    @include onDesktop {
+      font-size: 32px;
+      line-height: 44px;
+
+      margin-bottom: 10px;
+    }
+  }
+
+  &__about {
+    font-weight: 500;
+    line-height: 26px;
+    color: $page-gray-color;
+
+    margin-bottom: 30px;
+    padding: 0 20px;
+
+    @include onDesktop {
+      margin-bottom: 40px;
+      padding: 0;
+    }
+  }
+
+  &__action-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    margin-bottom: 25px;
+
+    @include onSmallDesktop {
+      flex-direction: row;
+      gap: 25px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__action-button {
+    padding: 20px 0;
+    width: 310px;
+
+    @include onSmallDesktop {
+      width: 250px;
+    }
+
+    @include onDesktop {
+      width: 290px;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    align-items: end;
+
+    @media (min-width: 400px) {
+      justify-content: center;
+    }
+
+    @include onSmallDesktop {
+      justify-content: start;
+    }
+  }
+
+  &__image {
+    margin-top: -127px;
+    pointer-events: none;
+    margin-bottom: 35px;
+
+    @media (min-width: 400px) {
+      margin: 0;
+      width: 70%;
+    }
+
+    @include onSmallDesktop {
+      width: 100%;
+      margin: 0 0 0 -27px;
+    }
+  }
+}

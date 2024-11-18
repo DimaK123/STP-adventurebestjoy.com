@@ -1,0 +1,124 @@
+.iletişim {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__section-title {
+    line-height: 58px;
+    margin-bottom: 24px;
+
+    @include onDesktop {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+
+    padding: 0 13px;
+
+    margin-bottom: 40px;
+
+    @include onDesktop {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__input {
+    height: 58px;
+    border: none;
+    width: 100%;
+
+    line-height: 58px;
+    color: $page-dark-blue-color;
+
+    padding-inline: 17px;
+
+    &[type="text"] {
+      margin-bottom: 20px;
+    }
+
+    &[type="email"] {
+      margin-bottom: 13px;
+    }
+
+    &[type="tel"] {
+      margin-bottom: 24px;
+    }
+
+    &::placeholder {
+      color: $page-dark-blue-color;
+    }
+  }
+
+  &__textArea {
+    height: 120px;
+    border: none;
+    width: 100%;
+
+    resize: none;
+
+    line-height: 58px;
+    color: $page-dark-blue-color;
+
+    margin-bottom: 31px;
+    padding: 31px 17px;
+
+    &::placeholder {
+      color: $page-dark-blue-color;
+    }
+
+    @include onDesktop {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__action-button {
+    padding: 16px 0;
+    border: none;
+    width: 100%;
+
+    @include onSmallDesktop {
+      width: 263px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 0 10px;
+    margin-bottom: 55px;
+
+    color: $page-dark-blue-color;
+    line-height: 28px;
+
+    @include onSmallDesktop {
+      gap: 5px;
+    }
+  }
+
+  &__contacts-top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include onSmallDesktop {
+      flex-direction: row;
+      gap: 40px;
+    }
+  }
+
+  &__phone {
+    @include onSmallDesktop {
+      order: -1;
+    }
+  }
+}

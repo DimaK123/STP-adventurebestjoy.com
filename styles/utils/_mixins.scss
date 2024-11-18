@@ -1,0 +1,22 @@
+@mixin onDesktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin onSmallDesktop {
+  @media (min-width: 1025px) {
+    @content; 
+  }
+}
+
+@mixin onTab {
+  @media (min-width: 769px) {
+    @content;
+  }
+} 
+
+@mixin figure($size) {
+  width: $size;
+  height: $size;
+}

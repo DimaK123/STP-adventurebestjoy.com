@@ -1,0 +1,67 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 35px 30px 40px 0;
+
+  @include onSmallDesktop {
+    padding: 35px 0;
+  }
+
+  @include onDesktop {
+    padding: 35px 115px 35px 55px;
+  }
+
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__links {
+    display: none;
+    font-size: 18px;
+    font-weight: 500;
+
+
+    @include onSmallDesktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      width: 100%;
+      
+      font-size: 15px;
+      line-height: 26px;
+      color: $page-gray-color;
+    }
+
+    &--menu {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      align-items: start;
+      padding: 19px 15px 35px;
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: $page-light-blue-color;
+    }
+
+    &--menu {
+      color: $main-color;
+
+      &:hover {
+        color: $page-red-color;
+      }
+    }
+  }
+
+  &__burger-link {
+    width: 30px;
+    height: 23px;
+
+    @include onSmallDesktop {
+      display: none;
+    }
+  }
+}

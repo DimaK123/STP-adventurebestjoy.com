@@ -1,0 +1,22 @@
+.action-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: #FDF9EB;
+
+  border-radius: 80px;
+
+  &--red {
+    background-color: #B60B0B;
+  }
+
+  &--blue {
+    background-color: $page-light-blue-color;
+  }
+
+  @include onSmallDesktop {
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
