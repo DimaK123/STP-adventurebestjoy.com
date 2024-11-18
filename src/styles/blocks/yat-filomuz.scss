@@ -1,0 +1,51 @@
+.yat-filomuz {
+  padding: 9px 0 33px;
+  background-color: #fff;
+  overflow-x: hidden;
+
+  @include onSmallDesktop {
+    padding: 26px 0 65px;
+  }
+
+  &__section-title{
+    line-height: 44px;
+
+    margin-bottom: 39px;
+
+    @include onSmallDesktop {
+      margin-bottom: 53px;
+    }
+  }
+
+  &__swiper-slide {
+    width: 342px;
+  }
+
+  &__slider-item {
+    padding: 0 24px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 162px;
+    border-radius: 30px;
+
+    object-fit: cover;
+
+    margin-bottom: 27px;
+  }
+
+  & h3 {
+    font-weight: 700;
+    font-style: 24px;
+    line-height: 30px;
+
+    margin-bottom: 4px;
+
+    color: $page-light-black-color;
+  }
+
+  & p {
+    color: $page-gray-color;
+  }
+}

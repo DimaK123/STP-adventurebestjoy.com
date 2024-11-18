@@ -1,0 +1,66 @@
+.yorumlar {
+  padding: 29px 0;
+
+  background-color: #fff;
+  color: $page-dark-blue-color;
+
+  @include onSmallDesktop {
+    padding: 40px 0 95px;
+  }
+
+
+  &__section-title {
+    line-height: 34px;
+
+    margin-bottom: 18px;
+
+    @include onSmallDesktop {
+      line-height: 58px;
+
+      margin-bottom: 20px;
+    }
+  }
+
+  &__about {
+    line-height: 28px;
+
+    margin-bottom: 12px;
+
+    @include onDesktop {
+      font-size: 24px;
+
+      margin-bottom: 65px;
+    }
+  }
+
+  &__swiper-wrapper {
+    @include onSmallDesktop {
+      justify-content: center;
+      gap: 22px;
+    }
+
+    @include onDesktop {
+      gap: 88px;
+    }
+  }
+
+  &__swiper-slide {
+    display: flex;
+    justify-content: center;
+
+    @include onSmallDesktop {
+      max-width: 315px;
+    }
+  }
+
+  &__slider-item {
+    padding: 0 5px;
+    max-width: 315px;
+  }
+
+  &__image {
+    margin-bottom: 20px;
+
+    width: 100%;
+  }
+}

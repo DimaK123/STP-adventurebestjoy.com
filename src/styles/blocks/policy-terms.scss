@@ -1,0 +1,58 @@
+.policy-terms {
+  font-size: 16px;
+  line-height: 24px;
+  color: $page-dark-blue-color;
+
+  text-align: left;
+
+  padding: 0 20px;
+  margin-bottom: 40px;
+
+  &__section-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin: 25px 0;
+
+    @include onSmallDesktop {
+      font-size: 24px;
+      line-height: 32px;
+
+      margin: 18px 0 46px;
+    }
+
+    &--çerez {
+      margin: 24px 0 54px;
+
+      @include onSmallDesktop {
+        margin: 29px 0 67px;
+      }
+    }
+
+    &--gizlilik {
+      @include onSmallDesktop {
+        margin: 29px 0 67px;
+      }
+    }
+  }
+
+  &__order-list {
+    list-style: decimal;
+  }
+
+  &__unorder-list {
+    list-style: disc;
+  }
+
+  &__subtitle {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  &__underline-link {
+    text-decoration: underline;
+  }
+}

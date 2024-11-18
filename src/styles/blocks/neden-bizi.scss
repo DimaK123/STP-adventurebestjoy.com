@@ -1,0 +1,123 @@
+.neden-bizi {
+  padding: 42px 0;
+  color: #000;
+  text-align: start;
+
+  overflow-x: hidden;
+
+  @include onSmallDesktop {
+    padding: 60px 0 50px;
+
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+
+    @include onDesktop {
+      align-items: center;
+    }
+  }
+
+  &__section-title {
+    max-width: min-content;
+    align-self: center;
+    
+    line-height: 32px;
+    color: inherit;
+
+    margin-bottom: 28px;
+
+    @include onSmallDesktop {
+      max-width: max-content;
+      line-height: 58px;
+    }
+  }
+
+  &__about {
+    margin-bottom: 36px;
+    text-align: center;
+
+    @include onDesktop {
+      max-width: 640px;
+    }
+  }
+
+  &__swiper {
+    min-height: 250px;
+  }
+
+  &__swiper-wrapper {
+    @include onSmallDesktop {
+      justify-content: space-between;
+    }
+
+    @include onDesktop {
+      gap: 24px;
+    }
+  }
+
+  &__swiper-slide {
+    width: max-content;
+  }
+
+  &__slider-item {
+    max-width: 258px;
+
+    &-1 {
+      max-width: 227px;
+    }
+
+    &-3 {
+      max-width: 219px;
+    }
+
+    @include onSmallDesktop {
+      text-align: left;
+    }
+  }
+
+  &__boat-icon {
+    width: 64px;
+    height: 55px;
+
+    margin-bottom: 24px;
+  }
+
+  & h3 {
+    font-size: 24px;
+    line-height: 28px;
+
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 24px;
+
+    color: $page-gray-color;
+  }
+
+  &__image {
+    display: block;
+    height: 290px;
+
+    &--mobile {
+      margin: 0 auto;
+      @include onTab {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+      height: 205px;
+      width: 100%;
+
+      @include onTab {
+        display: block;
+      }
+    }
+  }
+}

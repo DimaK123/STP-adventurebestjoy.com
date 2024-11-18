@@ -1,0 +1,12 @@
+.wrapper {
+  max-width: 1440px;
+  min-width: 320px;
+
+  margin: 0 auto;
+
+  padding: 0 10px;
+
+  @include onSmallDesktop {
+    padding: 0 22px;
+  }
+}

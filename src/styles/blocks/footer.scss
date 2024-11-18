@@ -1,0 +1,43 @@
+.footer {
+  @include onSmallDesktop {
+    background-color: #fff;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+    margin-bottom: 55px;
+
+    @include onSmallDesktop {
+      flex-direction: row;
+      gap: 0;
+      justify-content: space-between;
+
+      margin-bottom: 15px;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: $page-light-blue-color;
+
+    @include onSmallDesktop {
+      &:nth-child(2) {
+        order: -1;
+      }
+    }
+  }
+
+  &__copyright {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: $page-light-black-color;
+  }
+}
